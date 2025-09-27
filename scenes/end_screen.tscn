@@ -13,39 +13,58 @@ script = ExtResource("1_kq7ac")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1150.0
+offset_bottom = 650.0
 color = Color(0, 0, 0, 1)
 
 [node name="Explanation" type="Label" parent="."]
 visible = false
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "A resolution requires 9 'For' votes and no vetoes from the 5 permanent members (China, France, Russia, UK, US). 
+offset_left = 52.0
+offset_top = 127.0
+offset_right = 1202.0
+offset_bottom = 777.0
+theme_override_font_sizes/font_size = 30
+text = "A resolution requires 9 'For' votes and no vetoes from the 5 permanent 
+members (China, France, Russia, UK, US). 
+
 For: A vote in favor. 
+
 Abstain: Not voting. 
+
 Veto (Against): A permanent member votes no, failing the resolution."
 
 [node name="For countries" type="Label" parent="."]
 visible = false
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 14.0
+offset_top = 198.0
+offset_right = 1164.0
+offset_bottom = 848.0
+theme_override_font_sizes/font_size = 40
 text = "VOTES FOR:
-China, Russia, France, United Kingdom, Algeria, Denmark, Greece, Guyana, Pakistan, Panama, South Korea, Sierra Leone, Slovenia, Somalia"
+China, Russia, France, United Kingdom, Algeria, Denmark, 
+Greece, Guyana, Pakistan, Panama, South Korea, 
+Sierra Leone, Slovenia, Somalia"
 
 [node name="Against countries" type="Label" parent="."]
 visible = false
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 417.0
+offset_top = 258.0
+offset_right = 1567.0
+offset_bottom = 908.0
+theme_override_font_sizes/font_size = 40
 text = "VOTED AGAINST:
 United States"
 
 [node name="Vetoed" type="Label" parent="."]
 visible = false
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 197.0
+offset_top = 175.0
+offset_right = 962.0
+offset_bottom = 448.0
+theme_override_colors/font_color = Color(0.9198841, 0, 0.20224488, 1)
+theme_override_font_sizes/font_size = 200
 text = "VETOED"

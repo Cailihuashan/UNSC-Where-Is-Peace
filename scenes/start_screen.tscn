@@ -7,14 +7,16 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -1.0
+offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_tx5wa")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1150.0
+offset_bottom = 650.0
 color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="."]
@@ -22,14 +24,19 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_font_sizes/font_size = 25
-text = "On Sep 18th, 2025, the United Nation's Security Council held its monumental 10000th meeting, for the sole purpose on the voting for an immediate ceasefire for the genocide that is happening in the Gaza Strip...
+text = "On Sep 18th, 2025, the United Nation's Security Council held its monumental 10000th meeting, 
+for the sole purpose on the voting for an immediate ceasefire for the genocide that is 
+happening in the Gaza Strip...
 
 Your mission is to deliever the evidence of genocide out to the world. "
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 445.0
+offset_top = 368.0
+offset_right = 695.0
+offset_bottom = 488.0
+theme_override_font_sizes/font_size = 35
 text = "Begin"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
