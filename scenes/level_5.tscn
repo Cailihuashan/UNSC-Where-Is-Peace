@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://blwf8ab4pp4ue" path="res://scripts/level_5.gd" id="1_e224s"]
 [ext_resource type="PackedScene" uid="uid://4jc5024dgm4d" path="res://scenes/player.tscn" id="1_w2wna"]
-[ext_resource type="Texture2D" uid="uid://dj4g7xen5wlph" path="res://icon.svg" id="2_e224s"]
+[ext_resource type="Texture2D" uid="uid://ejs2h3h1yb0c" path="res://assets/olive-removebg-preview.png" id="3_e224s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wcwf6"]
-size = Vector2(127, 125)
+size = Vector2(544.5, 537.5)
 
 [node name="Level5" type="Node2D"]
 script = ExtResource("1_e224s")
@@ -14,13 +14,14 @@ script = ExtResource("1_e224s")
 position = Vector2(-1, -4)
 
 [node name="Goal" type="Area2D" parent="."]
+position = Vector2(18548, -6)
 
 [node name="Sprite2D" type="Sprite2D" parent="Goal"]
 position = Vector2(2404, -2)
-texture = ExtResource("2_e224s")
+texture = ExtResource("3_e224s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Goal"]
-position = Vector2(2405, -3)
+position = Vector2(2409, -2)
 shape = SubResource("RectangleShape2D_wcwf6")
 
 [node name="MissileTimer" type="Timer" parent="."]
