@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://kaeh1b3uf0jn"]
+[gd_scene load_steps=5 format=3 uid="uid://kaeh1b3uf0jn"]
 
+[ext_resource type="Script" uid="uid://blwf8ab4pp4ue" path="res://scripts/level_5.gd" id="1_e224s"]
 [ext_resource type="PackedScene" uid="uid://4jc5024dgm4d" path="res://scenes/player.tscn" id="1_w2wna"]
 [ext_resource type="Texture2D" uid="uid://dj4g7xen5wlph" path="res://icon.svg" id="2_e224s"]
 
@@ -7,6 +8,7 @@
 size = Vector2(127, 125)
 
 [node name="Level5" type="Node2D"]
+script = ExtResource("1_e224s")
 
 [node name="Player" parent="." instance=ExtResource("1_w2wna")]
 position = Vector2(-1, -4)
@@ -20,3 +22,14 @@ texture = ExtResource("2_e224s")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Goal"]
 position = Vector2(2405, -3)
 shape = SubResource("RectangleShape2D_wcwf6")
+
+[node name="MissileTimer" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true
+
+[node name="VetoHandTimer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="MissileTimer" to="." method="_on_missile_timer_timeout"]
+[connection signal="timeout" from="VetoHandTimer" to="." method="_on_veto_hand_timer_timeout"]

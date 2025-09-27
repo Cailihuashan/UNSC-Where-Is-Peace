@@ -1,11 +1,12 @@
 extends Area2D
 
+var speed = 400.0
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
+func _process(delta):
+	position.y += speed * delta
+	if position.y > 800: # Adjust this value based on your screen size
+		queue_free()
+
+
+func _on_body_entered(body: Node2D) -> void:
 	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
