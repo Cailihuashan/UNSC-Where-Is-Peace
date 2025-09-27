@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://cohf51wv24nra"]
+
+[ext_resource type="Script" uid="uid://do3rd8q35wnm4" path="res://scripts/end_screen.gd" id="1_kq7ac"]
+
+[node name="EndScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kq7ac")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 0, 0, 1)
+
+[node name="Explanation" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "A resolution requires 9 'For' votes and no vetoes from the 5 permanent members (China, France, Russia, UK, US). 
+For: A vote in favor. 
+Abstain: Not voting. 
+Veto (Against): A permanent member votes no, failing the resolution."
+
+[node name="For countries" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "VOTES FOR:
+China, Russia, France, United Kingdom, Algeria, Denmark, Greece, Guyana, Pakistan, Panama, South Korea, Sierra Leone, Slovenia, Somalia"
+
+[node name="Against countries" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "VOTED AGAINST:
+United States"
+
+[node name="Vetoed" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "VETOED"

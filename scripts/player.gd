@@ -10,3 +10,6 @@ func _physics_process(delta):
 	# Set velocity based on input and speed
 	velocity = direction * speed
 	move_and_slide()
+	
+func die():
+	get_tree().reload_current_scene()

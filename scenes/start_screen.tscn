@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfp63321w15e7"]
+
+[ext_resource type="Script" uid="uid://dkqwps7lefirn" path="res://scripts/start_screen.gd" id="1_tx5wa"]
+
+[node name="StartScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tx5wa")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 25
+text = "On Sep 18th, 2025, the United Nation's Security Council held its monumental 10000th meeting, for the sole purpose on the voting for an immediate ceasefire for the genocide that is happening in the Gaza Strip...
+
+Your mission is to deliever the evidence of genocide out to the world. "
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Begin"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -31,5 +31,6 @@ autostart = true
 wait_time = 5.0
 autostart = true
 
+[connection signal="body_entered" from="Goal" to="." method="_on_goal_body_entered"]
 [connection signal="timeout" from="MissileTimer" to="." method="_on_missile_timer_timeout"]
 [connection signal="timeout" from="VetoHandTimer" to="." method="_on_veto_hand_timer_timeout"]

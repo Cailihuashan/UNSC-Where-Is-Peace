@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://xwr4ymi536s4"]
+[gd_scene load_steps=7 format=3 uid="uid://xwr4ymi536s4"]
 
 [ext_resource type="Texture2D" uid="uid://40f1rkci78tk" path="res://assets/veto33-removebg-preview.png" id="1_1jpe0"]
+[ext_resource type="Script" uid="uid://durnwtg7lqlgw" path="res://scripts/veto_hand.gd" id="1_hgsgu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hgsgu"]
 size = Vector2(255.15512, 104.37509)
@@ -44,6 +45,7 @@ _data = {
 
 [node name="VetoHand" type="Area2D"]
 position = Vector2(-4, -3)
+script = ExtResource("1_hgsgu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 1)
@@ -58,3 +60,5 @@ shape = SubResource("RectangleShape2D_hgsgu")
 libraries = {
 &"": SubResource("AnimationLibrary_banei")
 }
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

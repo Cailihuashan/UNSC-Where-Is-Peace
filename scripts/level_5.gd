@@ -22,3 +22,8 @@ func _on_veto_hand_timer_timeout() -> void:
 	await play_hand.animation_finished
 	
 	hand.queue_free()
+
+
+func _on_goal_body_entered(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		get_tree().change_scene_to_file("res://scenes/end_screen.tscn")
