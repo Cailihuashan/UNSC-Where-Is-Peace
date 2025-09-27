@@ -41,6 +41,7 @@ wait_time = 5.0
 autostart = true
 
 [node name="BackgroundManager" type="Node2D" parent="."]
+visible = false
 script = ExtResource("4_wcwf6")
 background_scenes = Array[PackedScene]([ExtResource("5_1q3ip"), ExtResource("6_e4ab4"), ExtResource("7_xxvx7"), ExtResource("8_68hud"), ExtResource("9_jwrea"), ExtResource("10_ls1u8"), ExtResource("11_i670b")])
 
