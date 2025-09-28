@@ -5,4 +5,5 @@
 [node name="bground_1" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(5, 4.282)
 texture = ExtResource("1_n6ntg")
